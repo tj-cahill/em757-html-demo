@@ -1,0 +1,120 @@
+
+
+body {
+	margin: 0 5% 0 5%;
+	font-family: 'Lato', Geneva, Helvetica, sans-serif;
+	font-size: 1em;
+	background-color: whitesmoke;
+	color: #2F4F4F;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Roboto', inherit;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+a:link {
+	color: #4F4F2F;
+}
+
+a:hover {
+	background-color: #D3E5E5;
+}
+
+a:active {
+	font-weight: bold;
+}
+
+a:visited {
+	color: #4F2F4F;
+}
+
+hr {
+	background-color: #2F4F4F;
+	width: 80%;
+	height: 2px;
+}
+
+/* The below style is standard W3C for clearfix (may or may not be necessary). */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#course-title {
+	background-color: #D3E5E5;
+	color: #4F2F2F;
+	font-weight: bold;
+}
+
+div.leftcol {
+	float: left;
+	clear: both;
+	width: 50%;
+}
+
+div.rightcol {
+	float: right;
+	clear: right;
+	width: 50%;
+}
+
+img#headshot {
+	max-width: 30%;
+	max-height: 275px;
+	margin: 20px;
+	float: right;
+	border-radius: 25px;
+	background-color: inherit;
+}
+
+ul#contact-info {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+
+}
+
+
+@media screen and (max-width: 800px) {
+	div.leftcol, div.rightcol {
+		float: none;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h1, h2, h3, h4, h5 {
+		text-align: center;
+	}
+	
+	img#headshot {
+		float: none;
+		display: block;
+		min-width: 150px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+	ul#contact-info {
+		flex-direction: column;
+	}
+}
+
+
+#contact-info li {
+	width: 20%;
+	margin: 2.5%;
+}
+
+
