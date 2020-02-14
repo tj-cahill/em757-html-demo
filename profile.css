@@ -24,15 +24,12 @@ a:link {
 	color: #4F4F2F;
 }
 
-a:hover {
-	background-color: #D3E5E5;
-}
 
 a:active {
 	font-weight: bold;
 }
 
-a:visited {
+a:visited, a:hover {
 	color: #4F2F4F;
 }
 
@@ -40,6 +37,10 @@ hr {
 	background-color: #2F4F4F;
 	width: 80%;
 	height: 2px;
+}
+
+.fas, .fab {
+	font-size: 3em;
 }
 
 /* The below style is standard W3C for clearfix (may or may not be necessary). */
@@ -78,6 +79,7 @@ img#headshot {
 
 ul#contact-info {
 	width: 100%;
+	list-style: none;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -96,6 +98,10 @@ ul#contact-info {
 @media screen and (max-width: 600px) {
 	h1, h2, h3, h4, h5 {
 		text-align: center;
+	}
+	
+	.fas, .fab {
+		font-size: 2em;
 	}
 	
 	img#headshot {
