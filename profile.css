@@ -15,7 +15,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: 'Roboto', inherit;
+	font-family: 'Oswald', 'Roboto', 'Open Sans', Tahoma, Geneva, sans-serif
 }
 
 h1 {
